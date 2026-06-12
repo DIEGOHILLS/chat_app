@@ -1,83 +1,47 @@
 # Real-Time Chat Application
 
-A full-stack messaging platform built with the MERN stack and Socket.io, featuring
-real-time bidirectional communication, JWT-based authentication, and live online
-status indicators.
+A full-stack messaging platform built with the MERN stack and Socket.io. This application features real-time bidirectional communication, secure JWT-based authentication, and live online status indicators.
 
-**Live Demo:** (https://chattabox-swcj.onrender.com/)
+ **[Live Demo](https://chattabox-swcj.onrender.com/)**
+
 ---
 
 ## Tech Stack
 
 | Layer | Technology |
-|---|---|
-| Frontend | React, TailwindCSS, Daisy UI |
-| Backend | Node.js, Express.js |
-| Database | MongoDB |
-| Real-Time | Socket.io |
-| State Management | Zustand |
-| Authentication | JWT |
+| :--- | :--- |
+| **Frontend** | React, TailwindCSS, Daisy UI |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB |
+| **Real-Time** | Socket.io |
+| **State Management** | Zustand |
+| **Authentication** | JWT (JSON Web Tokens) |
 
 ---
 
-## Key Features
+##  Key Features
 
-- **Real-Time Messaging** — Instant bidirectional communication via Socket.io with
-  no page reloads, tested across multiple concurrent user sessions.
-
-- **JWT Authentication & Authorization** — Secure user access with token-based auth,
-  protected routes, and session validation on both client and server.
-
-- **Live Online Status** — Real-time user presence tracking using Socket.io rooms
-  and React Context for global state synchronization.
-
-- **Global State Management** — Efficient client-side state handling with Zustand,
-  ensuring consistent UI behavior across chat threads and user lists.
-
-- **Error Handling** — Comprehensive error boundaries on the frontend and centralized
-  error middleware on the backend for robust debugging and user feedback.
+* **Real-Time Messaging** — Instant, bidirectional communication powered by Socket.io with zero page reloads. Tested thoroughly across multiple concurrent user sessions.
+* **JWT Authentication & Authorization** — Secure user access with token-based authentication, protected routes, and session validation enforced on both the client and server.
+* **Live Online Status** — Real-time user presence tracking using Socket.io rooms and Zustand for global state synchronization.
+* **Global State Management** — Clean and efficient client-side state handling with Zustand, ensuring consistent UI behavior across chat threads and user lists.
+* **Robust Error Handling** — Implemented comprehensive error boundaries on the frontend and centralized error-handling middleware on the backend for graceful failure states and easier debugging.
 
 ---
 
+##  What I Learned
+
+Building this application deepened my understanding of **WebSocket event-driven architecture** and the nuances of maintaining consistent state across distributed clients. I also gained practical experience managing the **JWT token lifecycle** (including storage and expiration) and mastering the separation of authentication concerns between frontend routing and backend middleware.
 
 ---
 
-## What I Learned
-
-Building this application deepened my understanding of **WebSocket event-driven
-architecture** and the challenges of maintaining consistent state across
-distributed clients. I also gained practical experience with **JWT token lifecycle
-management** and the importance of separating authentication concerns between
-frontend routing and backend middleware.
-
----
-
-## Getting Started
+##  Getting Started
 
 ### Prerequisites
-- Node.js v18+
-- MongoDB instance (local or Atlas)
+* **Node.js** v18+
+* **MongoDB** instance (Local or MongoDB Atlas)
 
-### Environment Variables
-Create a `.env` file in the server directory:
-
-```env
-PORT=5000
-MONGO_DB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-NODE_ENV=development
-
-# Clone the repository
-git clone https://github.com/DIEGOHILLS/your-repo-name.git
-
-# Install server dependencies
-cd server
-npm install
-
-# Install client dependencies
-cd ../client
-npm install
-
-# Build and start
-npm run build
-npm start
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/DIEGOHILLS/your-repo-name.git](https://github.com/DIEGOHILLS/your-repo-name.git)
+cd your-repo-name
